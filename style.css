@@ -81,19 +81,6 @@ textarea {
   text-transform: uppercase;
 }
 
-.brand-mark {
-  display: grid;
-  min-width: 42px;
-  height: 42px;
-  padding: 0 12px;
-  place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  border-radius: 12px;
-  color: var(--text);
-  font-size: 0.68rem;
-  background: rgba(255, 255, 255, 0.05);
-}
-
 .site-nav {
   display: flex;
   align-items: center;
@@ -518,23 +505,6 @@ h3 {
   content: "";
 }
 
-.text-link {
-  display: inline-flex;
-  width: fit-content;
-  margin-top: auto;
-  color: var(--text);
-  font-size: 0.76rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.text-link::after {
-  margin-left: 10px;
-  color: var(--accent);
-  content: ">";
-}
-
 .about-section {
   position: relative;
   background: url("https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?auto=format&fit=crop&w=2200&q=82")
@@ -878,13 +848,6 @@ h3 {
 
   .brand {
     gap: 10px;
-  }
-
-  .brand-mark {
-    min-width: 38px;
-    height: 38px;
-    border-radius: 10px;
-    padding: 0 10px;
   }
 
   .section-shell {
