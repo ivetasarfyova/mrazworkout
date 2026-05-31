@@ -83,13 +83,14 @@ textarea {
 
 .brand-mark {
   display: grid;
-  width: 42px;
+  min-width: 42px;
   height: 42px;
+  padding: 0 12px;
   place-items: center;
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 12px;
   color: var(--text);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   background: rgba(255, 255, 255, 0.05);
 }
 
@@ -395,7 +396,7 @@ h3 {
 }
 
 .image-panel-two {
-  background-image: url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1300&q=82");
+  background-image: url("pic/petr_profile_pic.webp");
 }
 
 .feature-grid,
@@ -580,13 +581,38 @@ h3 {
   font-weight: 500;
 }
 
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.testimonial-avatar {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 26%, rgba(255, 255, 255, 0.2), transparent 34%),
+    linear-gradient(135deg, #4d4a4a, #151313 68%, #d12525);
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
 .testimonial-card strong {
   display: block;
-  margin-top: 26px;
   color: var(--text);
   font-size: 0.8rem;
   font-weight: 900;
   letter-spacing: 0.1em;
+  line-height: 1.35;
   text-transform: uppercase;
 }
 
@@ -855,9 +881,10 @@ h3 {
   }
 
   .brand-mark {
-    width: 38px;
+    min-width: 38px;
     height: 38px;
     border-radius: 10px;
+    padding: 0 10px;
   }
 
   .section-shell {
