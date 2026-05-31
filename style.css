@@ -506,18 +506,7 @@ h3 {
 }
 
 .about-section {
-  position: relative;
-  background: url("https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?auto=format&fit=crop&w=2200&q=82")
-    center / cover fixed;
-  isolation: isolate;
-}
-
-.about-section::before {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: rgba(11, 10, 10, 0.9);
-  content: "";
+  background: var(--black);
 }
 
 .credentials {
@@ -588,7 +577,7 @@ h3 {
 
 .contact-section {
   position: relative;
-  background: url("https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=2200&q=82")
+  background: url("pic/form_background.webp")
     center / cover no-repeat;
   isolation: isolate;
 }
@@ -922,10 +911,6 @@ h3 {
 
   .image-panel {
     min-height: 360px;
-  }
-
-  .about-section {
-    background-attachment: scroll;
   }
 
   .footer-inner {
