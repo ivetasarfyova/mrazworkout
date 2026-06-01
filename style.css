@@ -179,6 +179,36 @@ textarea {
   background: var(--black);
 }
 
+#kalistenika {
+  background:
+    linear-gradient(135deg, rgba(121, 163, 195, 0.96) 0%, rgba(110, 143, 163, 0.94) 58%, rgba(78, 51, 36, 0.9) 100%);
+  color: #120b08;
+}
+
+#kalistenika .eyebrow {
+  color: #3a2119;
+}
+
+#kalistenika h2,
+#kalistenika .section-copy p {
+  color: #120b08;
+}
+
+#kalistenika .section-copy p {
+  font-weight: 600;
+}
+
+#kalistenika .image-panel {
+  border-color: rgba(58, 33, 25, 0.28);
+  background-color: var(--clay);
+}
+
+#kalistenika .image-panel::after {
+  background:
+    linear-gradient(135deg, rgba(18, 11, 8, 0.12), rgba(58, 33, 25, 0.42)),
+    rgba(121, 163, 195, 0.08);
+}
+
 .hero {
   position: relative;
   display: grid;
