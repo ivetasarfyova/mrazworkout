@@ -1,13 +1,22 @@
 :root {
-  --black: #0b0a0a;
-  --charcoal: #272525;
-  --dark-gray: #504e4e;
-  --light-gray: #959393;
-  --text: #f6f6f6;
-  --accent: #d12525;
-  --line: rgba(255, 255, 255, 0.13);
-  --line-strong: rgba(255, 255, 255, 0.24);
-  --shadow: 0 28px 80px rgba(0, 0, 0, 0.44);
+  --black: #120b08;
+  --charcoal: #22140f;
+  --dark-gray: #4e3324;
+  --light-gray: #9c8b7a;
+  --text: #f2f2ee;
+  --muted: rgba(210, 226, 236, 0.74);
+  --muted-soft: rgba(210, 226, 236, 0.64);
+  --accent: #79a3c3;
+  --accent-strong: #9ec3d6;
+  --accent-dark: #6e8fa3;
+  --cream: #e6d6c6;
+  --bisque: #ebcdb7;
+  --clay: #957662;
+  --line: rgba(210, 226, 236, 0.14);
+  --line-strong: rgba(210, 226, 236, 0.28);
+  --surface: rgba(58, 33, 25, 0.52);
+  --surface-strong: rgba(58, 33, 25, 0.82);
+  --shadow: 0 28px 80px rgba(15, 8, 5, 0.48);
 }
 
 * {
@@ -20,7 +29,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--black);
+  background: linear-gradient(180deg, #120b08 0%, #1b100c 48%, #120b08 100%);
   color: var(--text);
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 16px;
@@ -66,7 +75,7 @@ textarea {
 .site-header.is-scrolled,
 .site-header.is-open {
   min-height: 74px;
-  background: rgba(11, 10, 10, 0.92);
+  background: rgba(18, 11, 8, 0.92);
   border-color: var(--line);
   backdrop-filter: blur(16px);
 }
@@ -89,7 +98,7 @@ textarea {
 
 .site-nav a {
   position: relative;
-  color: rgba(246, 246, 246, 0.76);
+  color: var(--muted);
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -128,7 +137,7 @@ textarea {
   padding: 0;
   border: 1px solid var(--line-strong);
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(210, 226, 236, 0.06);
   cursor: pointer;
 }
 
@@ -192,7 +201,9 @@ textarea {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background: rgba(0, 0, 0, 0.62);
+  background:
+    linear-gradient(90deg, rgba(18, 11, 8, 0.9) 0%, rgba(58, 33, 25, 0.7) 46%, rgba(18, 11, 8, 0.46) 100%),
+    rgba(18, 11, 8, 0.18);
 }
 
 .hero-content {
@@ -247,7 +258,7 @@ h3 {
 .hero-lead {
   max-width: 620px;
   margin-bottom: 34px;
-  color: rgba(246, 246, 246, 0.82);
+  color: rgba(242, 242, 238, 0.84);
   font-size: 1.32rem;
   font-weight: 500;
 }
@@ -281,22 +292,22 @@ h3 {
 .button-primary {
   border: 1px solid var(--accent);
   background: var(--accent);
-  color: var(--text);
+  color: #120b08;
 }
 
 .button-primary:hover {
-  background: #b91f1f;
-  border-color: #b91f1f;
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
 }
 
 .button-secondary {
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(210, 226, 236, 0.34);
   background: transparent;
   color: var(--text);
 }
 
 .button-secondary:hover {
-  border-color: rgba(255, 255, 255, 0.62);
+  border-color: rgba(158, 195, 214, 0.74);
 }
 
 .hero-strip {
@@ -308,7 +319,7 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
   border: 1px solid var(--line);
   border-bottom: 0;
-  background: rgba(11, 10, 10, 0.82);
+  background: var(--surface-strong);
   backdrop-filter: blur(14px);
 }
 
@@ -335,7 +346,7 @@ h3 {
 
 .hero-strip span {
   margin-top: 8px;
-  color: var(--light-gray);
+  color: var(--cream);
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -355,7 +366,7 @@ h3 {
 
 .section-copy p {
   max-width: 700px;
-  color: rgba(246, 246, 246, 0.72);
+  color: var(--muted);
   font-weight: 500;
 }
 
@@ -374,7 +385,7 @@ h3 {
 .image-panel::after {
   position: absolute;
   inset: 0;
-  background: rgba(11, 10, 10, 0.2);
+  background: linear-gradient(180deg, rgba(58, 33, 25, 0.12), rgba(18, 11, 8, 0.3));
   content: "";
 }
 
@@ -403,7 +414,7 @@ h3 {
 .contact-form {
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(11, 10, 10, 0.48);
+  background: var(--surface);
 }
 
 .feature-card {
@@ -425,7 +436,7 @@ h3 {
 .testimonial-card p,
 .contact-copy p,
 .form-note {
-  color: rgba(246, 246, 246, 0.7);
+  color: var(--muted-soft);
 }
 
 .section-heading {
@@ -452,8 +463,8 @@ h3 {
 }
 
 .price-card.featured {
-  border-color: rgba(209, 37, 37, 0.74);
-  box-shadow: inset 0 0 0 1px rgba(209, 37, 37, 0.16), var(--shadow);
+  border-color: rgba(158, 195, 214, 0.76);
+  box-shadow: inset 0 0 0 1px rgba(158, 195, 214, 0.18), var(--shadow);
 }
 
 .price-label {
@@ -520,7 +531,7 @@ h3 {
 }
 
 .credentials li {
-  color: rgba(246, 246, 246, 0.76);
+  color: var(--muted);
   font-weight: 500;
 }
 
@@ -553,10 +564,10 @@ h3 {
   height: 46px;
   flex: 0 0 46px;
   place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.24);
+  border: 1px solid rgba(210, 226, 236, 0.28);
   border-radius: 50%;
-  background: radial-gradient(circle at 32% 26%, rgba(255, 255, 255, 0.2), transparent 34%),
-    linear-gradient(135deg, #4d4a4a, #151313 68%, #d12525);
+  background: radial-gradient(circle at 32% 26%, rgba(242, 242, 238, 0.24), transparent 34%),
+    linear-gradient(135deg, var(--dark-gray), #1a0f0b 68%, var(--accent-dark));
   color: var(--text);
   font-size: 0.72rem;
   font-weight: 900;
@@ -586,7 +597,7 @@ h3 {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: rgba(11, 10, 10, 0.86);
+  background: linear-gradient(90deg, rgba(18, 11, 8, 0.92), rgba(58, 33, 25, 0.82));
   content: "";
 }
 
@@ -612,13 +623,13 @@ h3 {
 .contact-list a {
   padding: 18px 0;
   border-bottom: 1px solid var(--line);
-  color: rgba(246, 246, 246, 0.76);
+  color: var(--muted);
   font-weight: 600;
   transition: color 160ms ease, border-color 160ms ease;
 }
 
 .contact-list a:hover {
-  border-color: rgba(209, 37, 37, 0.7);
+  border-color: rgba(158, 195, 214, 0.72);
   color: var(--text);
 }
 
@@ -634,7 +645,7 @@ h3 {
 
 .contact-form {
   padding: 42px;
-  background: rgba(11, 10, 10, 0.72);
+  background: rgba(58, 33, 25, 0.74);
   backdrop-filter: blur(12px);
 }
 
@@ -661,7 +672,7 @@ h3 {
   width: 100%;
   border: 1px solid var(--line-strong);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(210, 226, 236, 0.06);
   color: var(--text);
   outline: none;
   transition: border-color 160ms ease, background 160ms ease;
@@ -680,8 +691,8 @@ h3 {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: rgba(209, 37, 37, 0.86);
-  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(158, 195, 214, 0.86);
+  background: rgba(210, 226, 236, 0.09);
 }
 
 .contact-form .button {
@@ -698,7 +709,7 @@ h3 {
 
 .site-footer {
   border-top: 1px solid var(--line);
-  background: #060606;
+  background: #0c0705;
 }
 
 .footer-inner {
@@ -751,7 +762,7 @@ h3 {
     padding: 12px;
     border: 1px solid var(--line);
     border-radius: 8px;
-    background: rgba(11, 10, 10, 0.98);
+    background: rgba(18, 11, 8, 0.98);
     box-shadow: var(--shadow);
     opacity: 0;
     pointer-events: none;
@@ -852,7 +863,7 @@ h3 {
   }
 
   .hero-overlay {
-    background: rgba(0, 0, 0, 0.72);
+    background: linear-gradient(180deg, rgba(18, 11, 8, 0.82), rgba(58, 33, 25, 0.7));
   }
 
   .hero-content {
