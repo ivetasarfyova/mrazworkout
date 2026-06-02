@@ -1,22 +1,22 @@
 :root {
-  --black: #120b08;
-  --charcoal: #22140f;
-  --dark-gray: #4e3324;
-  --light-gray: #9c8b7a;
-  --text: #f2f2ee;
-  --muted: rgba(210, 226, 236, 0.74);
-  --muted-soft: rgba(210, 226, 236, 0.64);
-  --accent: #79a3c3;
-  --accent-strong: #9ec3d6;
-  --accent-dark: #6e8fa3;
-  --cream: #e6d6c6;
-  --bisque: #ebcdb7;
-  --clay: #957662;
-  --line: rgba(210, 226, 236, 0.14);
-  --line-strong: rgba(210, 226, 236, 0.28);
-  --surface: rgba(58, 33, 25, 0.52);
-  --surface-strong: rgba(58, 33, 25, 0.82);
-  --shadow: 0 28px 80px rgba(15, 8, 5, 0.48);
+  --black: #0b0d0f;
+  --charcoal: #15181c;
+  --dark-gray: #2d333a;
+  --light-gray: #a7afb7;
+  --text: #f4f6f8;
+  --muted: rgba(224, 229, 234, 0.76);
+  --muted-soft: rgba(224, 229, 234, 0.64);
+  --accent: #c2cbd3;
+  --accent-strong: #e0e5e9;
+  --accent-dark: #7d8a95;
+  --soft-gray: #d9dfe4;
+  --mid-gray: #b9c3cc;
+  --panel-gray: #8c969f;
+  --line: rgba(224, 229, 234, 0.14);
+  --line-strong: rgba(224, 229, 234, 0.28);
+  --surface: rgba(31, 36, 42, 0.58);
+  --surface-strong: rgba(25, 29, 34, 0.84);
+  --shadow: 0 28px 80px rgba(0, 0, 0, 0.42);
 }
 
 * {
@@ -29,7 +29,7 @@ html {
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, #120b08 0%, #1b100c 48%, #120b08 100%);
+  background: linear-gradient(180deg, #0b0d0f 0%, #171a1f 48%, #0b0d0f 100%);
   color: var(--text);
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 16px;
@@ -75,7 +75,7 @@ textarea {
 .site-header.is-scrolled,
 .site-header.is-open {
   min-height: 74px;
-  background: rgba(18, 11, 8, 0.92);
+  background: rgba(11, 13, 15, 0.92);
   border-color: var(--line);
   backdrop-filter: blur(16px);
 }
@@ -137,7 +137,7 @@ textarea {
   padding: 0;
   border: 1px solid var(--line-strong);
   border-radius: 12px;
-  background: rgba(210, 226, 236, 0.06);
+  background: rgba(224, 229, 234, 0.06);
   cursor: pointer;
 }
 
@@ -181,17 +181,17 @@ textarea {
 
 #kalistenika {
   background:
-    linear-gradient(135deg, rgba(121, 163, 195, 0.96) 0%, rgba(110, 143, 163, 0.94) 58%, rgba(78, 51, 36, 0.9) 100%);
-  color: #120b08;
+    linear-gradient(135deg, rgba(232, 236, 239, 0.98) 0%, rgba(188, 198, 207, 0.95) 56%, rgba(112, 122, 132, 0.92) 100%);
+  color: #0b0d0f;
 }
 
 #kalistenika .eyebrow {
-  color: #3a2119;
+  color: #303740;
 }
 
 #kalistenika h2,
 #kalistenika .section-copy p {
-  color: #120b08;
+  color: #0b0d0f;
 }
 
 #kalistenika .section-copy p {
@@ -199,14 +199,14 @@ textarea {
 }
 
 #kalistenika .image-panel {
-  border-color: rgba(58, 33, 25, 0.28);
-  background-color: var(--clay);
+  border-color: rgba(29, 34, 39, 0.28);
+  background-color: var(--panel-gray);
 }
 
 #kalistenika .image-panel::after {
   background:
-    linear-gradient(135deg, rgba(18, 11, 8, 0.12), rgba(58, 33, 25, 0.42)),
-    rgba(121, 163, 195, 0.08);
+    linear-gradient(135deg, rgba(11, 13, 15, 0.08), rgba(29, 34, 39, 0.32)),
+    rgba(194, 203, 211, 0.12);
 }
 
 .hero {
@@ -232,8 +232,8 @@ textarea {
   inset: 0;
   z-index: -2;
   background:
-    linear-gradient(90deg, rgba(18, 11, 8, 0.9) 0%, rgba(58, 33, 25, 0.7) 46%, rgba(18, 11, 8, 0.46) 100%),
-    rgba(18, 11, 8, 0.18);
+    linear-gradient(90deg, rgba(11, 13, 15, 0.92) 0%, rgba(31, 36, 42, 0.72) 46%, rgba(11, 13, 15, 0.48) 100%),
+    rgba(11, 13, 15, 0.18);
 }
 
 .hero-content {
@@ -288,7 +288,7 @@ h3 {
 .hero-lead {
   max-width: 620px;
   margin-bottom: 34px;
-  color: rgba(242, 242, 238, 0.84);
+  color: rgba(244, 246, 248, 0.84);
   font-size: 1.32rem;
   font-weight: 500;
 }
@@ -322,7 +322,7 @@ h3 {
 .button-primary {
   border: 1px solid var(--accent);
   background: var(--accent);
-  color: #120b08;
+  color: #0b0d0f;
 }
 
 .button-primary:hover {
@@ -331,13 +331,13 @@ h3 {
 }
 
 .button-secondary {
-  border: 1px solid rgba(210, 226, 236, 0.34);
+  border: 1px solid rgba(224, 229, 234, 0.34);
   background: transparent;
   color: var(--text);
 }
 
 .button-secondary:hover {
-  border-color: rgba(158, 195, 214, 0.74);
+  border-color: rgba(224, 229, 234, 0.74);
 }
 
 .hero-strip {
@@ -376,7 +376,7 @@ h3 {
 
 .hero-strip span {
   margin-top: 8px;
-  color: var(--cream);
+  color: var(--soft-gray);
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -415,7 +415,7 @@ h3 {
 .image-panel::after {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(58, 33, 25, 0.12), rgba(18, 11, 8, 0.3));
+  background: linear-gradient(180deg, rgba(31, 36, 42, 0.12), rgba(11, 13, 15, 0.3));
   content: "";
 }
 
@@ -493,8 +493,8 @@ h3 {
 }
 
 .price-card.featured {
-  border-color: rgba(158, 195, 214, 0.76);
-  box-shadow: inset 0 0 0 1px rgba(158, 195, 214, 0.18), var(--shadow);
+  border-color: rgba(224, 229, 234, 0.72);
+  box-shadow: inset 0 0 0 1px rgba(224, 229, 234, 0.18), var(--shadow);
 }
 
 .price-label {
@@ -594,10 +594,10 @@ h3 {
   height: 46px;
   flex: 0 0 46px;
   place-items: center;
-  border: 1px solid rgba(210, 226, 236, 0.28);
+  border: 1px solid rgba(224, 229, 234, 0.28);
   border-radius: 50%;
-  background: radial-gradient(circle at 32% 26%, rgba(242, 242, 238, 0.24), transparent 34%),
-    linear-gradient(135deg, var(--dark-gray), #1a0f0b 68%, var(--accent-dark));
+  background: radial-gradient(circle at 32% 26%, rgba(244, 246, 248, 0.24), transparent 34%),
+    linear-gradient(135deg, var(--dark-gray), #101317 68%, var(--accent-dark));
   color: var(--text);
   font-size: 0.72rem;
   font-weight: 900;
@@ -627,7 +627,7 @@ h3 {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(90deg, rgba(18, 11, 8, 0.92), rgba(58, 33, 25, 0.82));
+  background: linear-gradient(90deg, rgba(11, 13, 15, 0.92), rgba(31, 36, 42, 0.84));
   content: "";
 }
 
@@ -659,7 +659,7 @@ h3 {
 }
 
 .contact-list a:hover {
-  border-color: rgba(158, 195, 214, 0.72);
+  border-color: rgba(224, 229, 234, 0.72);
   color: var(--text);
 }
 
@@ -675,7 +675,7 @@ h3 {
 
 .contact-form {
   padding: 42px;
-  background: rgba(58, 33, 25, 0.74);
+  background: rgba(25, 29, 34, 0.78);
   backdrop-filter: blur(12px);
 }
 
@@ -702,7 +702,7 @@ h3 {
   width: 100%;
   border: 1px solid var(--line-strong);
   border-radius: 8px;
-  background: rgba(210, 226, 236, 0.06);
+  background: rgba(224, 229, 234, 0.06);
   color: var(--text);
   outline: none;
   transition: border-color 160ms ease, background 160ms ease;
@@ -721,8 +721,8 @@ h3 {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: rgba(158, 195, 214, 0.86);
-  background: rgba(210, 226, 236, 0.09);
+  border-color: rgba(224, 229, 234, 0.86);
+  background: rgba(224, 229, 234, 0.09);
 }
 
 .contact-form .button {
@@ -739,7 +739,7 @@ h3 {
 
 .site-footer {
   border-top: 1px solid var(--line);
-  background: #0c0705;
+  background: #080a0c;
 }
 
 .footer-inner {
@@ -792,7 +792,7 @@ h3 {
     padding: 12px;
     border: 1px solid var(--line);
     border-radius: 8px;
-    background: rgba(18, 11, 8, 0.98);
+    background: rgba(11, 13, 15, 0.98);
     box-shadow: var(--shadow);
     opacity: 0;
     pointer-events: none;
@@ -893,7 +893,7 @@ h3 {
   }
 
   .hero-overlay {
-    background: linear-gradient(180deg, rgba(18, 11, 8, 0.82), rgba(58, 33, 25, 0.7));
+    background: linear-gradient(180deg, rgba(11, 13, 15, 0.84), rgba(31, 36, 42, 0.72));
   }
 
   .hero-content {
